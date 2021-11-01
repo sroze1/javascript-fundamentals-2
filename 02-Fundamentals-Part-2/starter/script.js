@@ -1,37 +1,14 @@
-true;
+'use strict';
 
-let javascriptIsFun = true;
-// console.log(javascriptIsFun);
+// Strict mode forbids us to do certain things
+// It creates visible errors in the console
 
-// // console.log(typeof true);
-// console.log(typeof javascriptIsFun);
-// console.log(typeof 23);
-// console.log(typeof 'Jonas');
+let hasDriversLicense = false;
+const passTest = true;
 
-
-
-javascriptIsFun = 'Yes';
-//  This allows us to redefine our variable without having to add a new value using let
-
-console.log(typeof javascriptIsFun);
-
-let year;
-// console.log(year);
-// console.log(typeof year);
+if(passTest) hasDriversLicense = true;
+if(hasDriversLicense) console.log(`i can drive`);
 
 
-// year = 1991;
-
-// console.log(year);
-// console.log(typeof year +  " " + year);
-
-// console.log(typeof null);
-
-let isIsland = false;
-let language;
-let population = 229000000;
-let country = "Pakistan";
-
-console.log(typeof isIsland, typeof population, typeof country, typeof language);
-
-
+// const interface = "Audio";
+// const private = 534;

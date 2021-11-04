@@ -86,26 +86,60 @@
 //     return 2037 - birthYear;
 // }
 
-const calcAge = function(birthYear) { 
-    return 2037 - birthYear;
-}
+// const calcAge = function(birthYear) { 
+//     return 2037 - birthYear;
+// }
 
-const yearsToRetirement = function (birthYear, firstName) {
-    const age = calcAge(birthYear);
-    const retirement = 65 - age;
+// const yearsToRetirement = function (birthYear, firstName) {
+//     const age = calcAge(birthYear);
+//     const retirement = 65 - age;
 
-    if(retirement <= 0) { 
-        return -1;
-        console.log(`${firstName} has already retired`);
-    } 
+//     if(retirement <= 0) { 
+//         return -1;
+//         console.log(`${firstName} has already retired`);
+//     } 
     
-    else {     
-        console.log(`${firstName} retires in ${retirement} years`);
-        return retirement;
+//     else {     
+//         console.log(`${firstName} retires in ${retirement} years`);
+//         return retirement;
+//     }
+// }
+
+// console.log(yearsToRetirement(1991, 'Sheroze'));
+// console.log(yearsToRetirement(19, 'Mike'));
+
+
+
+
+
+
+
+
+// calcAverafe of 3 scores using arrow function
+// 2 Use function to calculate average score of each team as parameters
+
+// 3 Create a function 'checkWinner that takes the average score of each team as ..
+// ..parameters ('avgDolphins' and 'avgKoalas') and then logs the winner to the ..
+// console together with the victory points, according to the rule above. Example:
+// "Koalas win (30 vs. 31")
+
+// 4. Use the 'checkWinner' function to determine the winner for both
+
+// TEST DATA DOLPHINS 44, 23, 71  ---- KOALAS SCORE 65, 54, 49
+// DATA 2: DOLPHINS SCORE 85, 54, 41 ---- KOALAS SCORE 23, 34 AND 27
+
+
+const calcAverage =  (score1, score2, score3) =>(score1 + score2 + score3) / 3;
+
+const averageScoreDolph = calcAverage(85, 54, 41);
+const averageScoreKoala = calcAverage(23,34,27);
+
+function checkWinner(average1, average2) { 
+        if(average1 >=2* average2) { 
+                console.log(`Dolphins win with an average of ${average1}`)
+            } else if (average2 >=2* average1) { 
+                console.log(`Koalas win with an average of ${average2}`)
+            } else console.log(`No team wins!`)
     }
-}
-
-console.log(yearsToRetirement(1991, 'Sheroze'));
-console.log(yearsToRetirement(19, 'Mike'));
-
+checkWinner(averageScoreDolph, averageScoreKoala);
 

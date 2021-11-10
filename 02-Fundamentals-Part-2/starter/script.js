@@ -239,6 +239,55 @@
 
 
 
-// Write a function called calcTip
+// Write a function called calcTip:
+// Using the same value, Tip 15% of the bill is the bill value is between 50 and 300.. 
+// .. and if the value is different, then tip 20%
+
+// calcTip function takes value as an input and returns the corresponding tip, based on the rules above
+// Test the function using a bill value of 100
 
 
+// Let's use arrays:
+// Create an array 'bills' containing the test data below, calculated from the function created above
+
+//BONUS: Create an array 'total' containing the total values (bill+tip);
+
+//TEST DATA: 125, 555, 44
+
+
+// function calcTip(bill) { 
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
+
+// const bills = [calcTip(125), calcTip(555), calcTip(44)];
+// console.log(bills);
+
+
+// const total = [ (bills[0]+125),  (bills[1] + 555), (bills[2] + 44) ]  
+
+// console.log(total);
+
+
+
+
+
+const jonas = { 
+    firstName: 'Jonas', 
+    lastName: 'Something',
+    age: 2037 - 1997,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+}
+
+console.log(jonas);
+
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+
+
+const interestedIn = prompt(`What do you want to know about Jonas? Choose between
+firstName, lastName, age, job, and friends`);
+console.log(jonas[interestedIn]);

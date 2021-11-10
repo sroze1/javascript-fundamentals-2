@@ -143,52 +143,102 @@
 //     }
 // checkWinner(averageScoreDolph, averageScoreKoala);
 
-const friend1 = `Michael`;
-const friend2 = `Steven`;
-const friend3 = `Peter`;
+// const friend1 = `Michael`;
+// const friend2 = `Steven`;
+// const friend3 = `Peter`;
 
-const friends = ['Michael', 'Steven', 'Peter'];
-console.log(friends);
-
-
+// const friends = ['Michael', 'Steven', 'Peter'];
+// console.log(friends);
 
 
 
-console.log(friends[0]);
 
 
-console.log(friends.length);
-console.log(friends[friends.length-1]);
+// console.log(friends[0]);
 
 
-friends[2] = `Jay`;
-console.log(friends);
-
-// friends= [`Bob`, `Alice`];
+// console.log(friends.length);
+// console.log(friends[friends.length-1]);
 
 
-const firstName = `Jonas`;
-const jonas = [firstName, `Sheroze`, 2037 - 1997, friends];
+// friends[2] = `Jay`;
+// console.log(friends);
 
-console.log(jonas)
-
-
-
-// Exercise
-const age1 = calcAge1(1997);
-
-// Function declaration
-function calcAge1(birthYear) { 
-    return 2037 - birthYear;
-}
-
-const years= [1990, 1967, 2002, 2010, 2018];
-calcAge1(years);
+// // friends= [`Bob`, `Alice`];
 
 
-const age11 = calcAge1(years[0]);
-const age2 = calcAge1(years[1]);
-const age3 = calcAge1(years[years.length - 1]);
+// const firstName = `Jonas`;
+// const jonas = [firstName, `Sheroze`, 2037 - 1997, friends];
 
-const ages = [calcAge1(years[0]), calcAge1(years[1]), calcAge1(years[years.length - 1])];
-console.log(ages);
+// console.log(jonas)
+
+
+
+// // Exercise
+// const age1 = calcAge1(1997);
+
+// // Function declaration
+// function calcAge1(birthYear) { 
+//     return 2037 - birthYear;
+// }
+
+// const years= [1990, 1967, 2002, 2010, 2018];
+// calcAge1(years);
+
+
+// const age11 = calcAge1(years[0]);
+// const age2 = calcAge1(years[1]);
+// const age3 = calcAge1(years[years.length - 1]);
+
+// const ages = [calcAge1(years[0]), calcAge1(years[1]), calcAge1(years[years.length - 1])];
+// console.log(ages);
+
+
+
+
+
+// ADD ELEMENTS
+// const friends = ['Michael', 'Jay', 'Sheroze'];
+// const newLength = friends.push('Jonas');
+// // console.log(friends);
+
+// console.log(newLength);
+
+
+// friends.unshift('John');
+// console.log(friends)
+
+
+
+
+// // Remove elements
+// friends.pop(); // removes last element .. doesn't need info to remove
+// friends.pop(); //  can be done twice
+// console.log(friends);
+
+
+
+// friends.shift();
+// console.log(friends);
+
+
+// console.log(friends.indexOf('Jay'));
+
+
+
+
+
+// console.log(friends.includes('Jay'));
+// console.log(friends.includes('Sheroze'));
+
+
+
+// if(friends.includes('Peter')) { 
+//     console.log(`You have a friend called Peter`);
+// }
+
+
+
+// Write a function called calcTip
+
+

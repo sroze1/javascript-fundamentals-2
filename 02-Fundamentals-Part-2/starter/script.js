@@ -360,41 +360,54 @@
 
 
 
-const John = { 
-    fullName: 'John Smith',
-    height: 1.95,
-    weight: 78,
+// const John = { 
+//     fullName: 'John Smith',
+//     height: 1.95,
+//     weight: 78,
 
-    calcBMI: function () { 
-        this.BMI = this.weight / (this.height*this.height);
-        return this.BMI;
-    }
-}
+//     calcBMI: function () { 
+//         this.BMI = this.weight / (this.height*this.height);
+//         return this.BMI;
+//     }
+// }
 
-const Mark = { 
-    fullName: 'Mark Miller',
-    height: 1.69,
-    weight: 60,
+// const Mark = { 
+//     fullName: 'Mark Miller',
+//     height: 1.69,
+//     weight: 60,
 
-    calcBMI: function () { 
-        this.BMI = this.weight / (this.height*this.height);
-        return this.BMI;
-    }
-}
+//     calcBMI: function () { 
+//         this.BMI = this.weight / (this.height*this.height);
+//         return this.BMI;
+//     }
+// }
 
 
-John.calcBMI();
-Mark.calcBMI();
+// John.calcBMI();
+// Mark.calcBMI();
   
 
-if(Mark.BMI >  John.BMI) { 
-    console.log(`${Mark.fullName}'s BMI (${Mark.BMI}) is higher than ${John.fullName}'s' (${John.BMI}).`)
-} else if (John.BMI > Mark.BMI) { 
-    console.log(`${John.fullName}'s BMI (${John.BMI}) is higher than ${Mark.fullName}'s' (${Mark.BMI}).`)
+// if(Mark.BMI >  John.BMI) { 
+//     console.log(`${Mark.fullName}'s BMI (${Mark.BMI}) is higher than ${John.fullName}'s' (${John.BMI}).`)
+// } else if (John.BMI > Mark.BMI) { 
+//     console.log(`${John.fullName}'s BMI (${John.BMI}) is higher than ${Mark.fullName}'s' (${Mark.BMI}).`)
+// }
+
+
+// console.log('Lifting weights repetiton 1');
+// console.log('Lifting weights repetiton 2');
+// console.log('Lifting weights repetiton 3');
+// console.log('Lifting weights repetiton 4');
+// console.log('Lifting weights repetiton 5');
+// console.log('Lifting weights repetiton 6');
+// console.log('Lifting weights repetiton 7');
+// console.log('Lifting weights repetiton 8');
+// console.log('Lifting weights repetiton 9');
+// console.log('Lifting weights repetiton 10');
+
+// for loop keeps running while condition is TRUE
+for(let rep = 1; rep <= 10; rep++) { 
+    console.log(`Lifting weights repetition ${rep}`);
 }
-
-
-
-
 
 

@@ -493,24 +493,30 @@
 // }
 
 
-let javaScriptIsFun = true;
-console.log(javaScriptIsFun);
+// let javaScriptIsFun = true;
+// console.log(javaScriptIsFun);
 
-console.log(typeof true);
-console.log(typeof javaScriptIsFun);
-console.log(typeof 23);
-console.log(typeof 'Jonas');
-
-
-javaScriptIsFun = 'YES';
-console.log(typeof javaScriptIsFun);
-
-let year; 
-console.log(typeof year);
-
-year = 2021;
-console.log(typeof year);
+// console.log(typeof true);
+// console.log(typeof javaScriptIsFun);
+// console.log(typeof 23);
+// console.log(typeof 'Jonas');
 
 
+// javaScriptIsFun = 'YES';
+// console.log(typeof javaScriptIsFun);
+
+// let year; 
+// console.log(typeof year);
+
+// year = 2021;
+// console.log(typeof year);
+
+// let and const was introduced in ES6. 
 // JavaScript programs are executed from top to bottom.
 // Therefore the javaScriptIsFun in this case would need to be executed before the 
+
+let age = 30;
+age = 31;
+
+var job = 'programmer';
+job = 'teacher'

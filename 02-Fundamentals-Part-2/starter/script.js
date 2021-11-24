@@ -515,8 +515,46 @@
 // JavaScript programs are executed from top to bottom.
 // Therefore the javaScriptIsFun in this case would need to be executed before the 
 
-let age = 30;
-age = 31;
+// let age = 30;
+// age = 31;
 
-var job = 'programmer';
-job = 'teacher'
+// var job = 'programmer';
+// job = 'teacher'
+
+
+// for(let rep=1; rep <= 10; rep++) { 
+//     console.log(`Lifting weights repetition ${rep}`);
+// }
+
+// let rep = 1;
+// while (rep <= 10) { 
+//     console.log(`WHILE Lifting weights repetition ${rep}`)
+//     rep++;
+// }
+
+// let dice =  Math.trunc(Math.random() * 6) + 1;
+
+// while (dice !== 6) { 
+//     console.log(`You rolled a ${dice}`);
+//     dice =  Math.trunc(Math.random() * 6) + 1;
+//     if(dice===6) console.log(`Loop is about to end..`);
+// }
+
+
+//1. Create an array for ‘bills’ containing at least 10 test values
+// 2. Create an empty arrays for the tips and the totals (‘tips’ and ‘totals’)
+
+// 3. Use calcTip function we wrote before (no need to repeat) to calculate tips and total values (bill + tip) for every bill value in the bills array. 
+// Use a for loop to perform 10 calculations.
+
+//TEST DATA: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
+
+
+
+// BONUS : 
+
+// Write a function ‘calcAverage’ which takes an array called ‘are’ as an argument. This function calculates the average of all numbers in the given array. 
+
+// 4.1 First, you will need to add up all values in the array. To do the addition, start by creating a variable ‘sum’ that starts at 0. Then loop over the array using a for loop. In each iteration, add current value to the ‘sum’ variable. This way, by the end of the loop, you have all values added together. 
+// 4.2 To calculate the average, divide the sum you calculated before by the length of array (because that’s the  number of elements)
+// 4.3 Call the function with the ‘totals’ array

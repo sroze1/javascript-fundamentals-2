@@ -541,6 +541,10 @@
 // }
 
 
+
+
+
+
 //1. Create an array for ‘bills’ containing at least 10 test values
 // 2. Create an empty arrays for the tips and the totals (‘tips’ and ‘totals’)
 
@@ -549,12 +553,50 @@
 
 //TEST DATA: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
 
+function calcTip(bill) { 
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const totals = [];
+const tips = [];
+
+
+for (let i = 0; i < bills.length; i++) { 
+    const tip =  calcTip(bills[i]);
+    tips.push(tip);
+    totals.push = (tip  + bills[i]);
+}
+
+console.log(bills, tips, totals);
 
 
 // BONUS : 
 
 // Write a function ‘calcAverage’ which takes an array called ‘are’ as an argument. This function calculates the average of all numbers in the given array. 
 
-// 4.1 First, you will need to add up all values in the array. To do the addition, start by creating a variable ‘sum’ that starts at 0. Then loop over the array using a for loop. In each iteration, add current value to the ‘sum’ variable. This way, by the end of the loop, you have all values added together. 
+// 4.1 First, you will need to add up all values in the array. To do the addition, start by creating a variable ‘sum’ that starts at 0. 
+// Then loop over the array using a for loop. In each iteration, add current value to the ‘sum’ variable. 
+// This way, by the end of the loop, you have all values added together. 
+
 // 4.2 To calculate the average, divide the sum you calculated before by the length of array (because that’s the  number of elements)
 // 4.3 Call the function with the ‘totals’ array
+
+
+function calcAverage(arr) { 
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++) { 
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+
+
+console.log(calcAverage([2, 3, 7]));
+console.log(calcAverage(totals) + 'Yes Cujn');
+console.log(calcAverage(tips) + 'Yes G');
+
+
+// console.log(calcAverage(bills));
+
+// The dife 6

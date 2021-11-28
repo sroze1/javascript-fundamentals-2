@@ -608,10 +608,22 @@
 // console.log(describeCountry('India', '1 billion', 'Mumbai'));
 // console.log(describeCountry('China', '1 billion', 'Shaghai'));
 
-function percentageOfWorld1(population) { 
-      return (population / 7_753_000_000) * 100;
+// function percentageOfWorld1(population) { 
+//       return (population / 7_753_000_000) * 100;
+// }
+
+// console.log(percentageOfWorld1(1_400_000_000));
+// console.log(percentageOfWorld1(2_400_000_000));
+// console.log(percentageOfWorld1(3_400_000_000));
+
+
+const percentageOfWorld3 = population => (population / 7_753_000_000) * 100 + "%";
+console.log(percentageOfWorld3(14_000_000_000));
+
+
+
+function describePopulation (country, population) { 
+    return `${country} has ${population} which is about ${percentageOfWorld3(population)} of the world.`
 }
 
-console.log(percentageOfWorld1(1_400_000_000));
-console.log(percentageOfWorld1(2_400_000_000));
-console.log(percentageOfWorld1(3_400_000_000));
+console.log(describePopulation("Pakistan", 229_000_000));

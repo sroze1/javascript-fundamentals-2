@@ -583,20 +583,27 @@ console.log(bills, tips, totals);
 // 4.3 Call the function with the ‘totals’ array
 
 
-function calcAverage(arr) { 
-    let sum = 0;
-    for(let i = 0; i < arr.length; i++) { 
-        sum += arr[i];
-    }
-    return sum / arr.length;
-}
+// function calcAverage(arr) { 
+//     let sum = 0;
+//     for(let i = 0; i < arr.length; i++) { 
+//         sum += arr[i];
+//     }
+//     return sum / arr.length;
+// }
 
 
-console.log(calcAverage([2, 3, 7]));
-console.log(calcAverage(totals) + 'Yes Cujn');
-console.log(calcAverage(tips) + 'Yes G');
+// console.log(calcAverage([2, 3, 7]));
+// console.log(calcAverage(totals) + 'Yes Cujn');
+// console.log(calcAverage(tips) + 'Yes G');
 
-
-// console.log(calcAverage(bills));
 
 // The dife 6
+
+
+function describeCountry(country, population, capitalCity) { 
+    return `${country} has ${population} people and its capital city is ${capitalCity}`
+}
+
+console.log(describeCountry('Pakistan', '229 million', 'Islamabad'));
+console.log(describeCountry('India', '1 billion', 'Mumbai'));
+console.log(describeCountry('China', '1 billion', 'Shaghai'));

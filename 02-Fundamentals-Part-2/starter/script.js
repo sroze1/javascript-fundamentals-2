@@ -553,22 +553,22 @@
 
 //TEST DATA: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
 
-function calcTip(bill) { 
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
+// function calcTip(bill) { 
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
 
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-const totals = [];
-const tips = [];
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const totals = [];
+// const tips = [];
 
 
-for (let i = 0; i < bills.length; i++) { 
-    const tip =  calcTip(bills[i]);
-    tips.push(tip);
-    totals.push = (tip  + bills[i]);
-}
+// for (let i = 0; i < bills.length; i++) { 
+//     const tip =  calcTip(bills[i]);
+//     tips.push(tip);
+//     totals.push = (tip  + bills[i]);
+// }
 
-console.log(bills, tips, totals);
+// console.log(bills, tips, totals);
 
 
 // BONUS : 
@@ -600,10 +600,18 @@ console.log(bills, tips, totals);
 // The dife 6
 
 
-function describeCountry(country, population, capitalCity) { 
-    return `${country} has ${population} people and its capital city is ${capitalCity}`
+// function describeCountry(country, population, capitalCity) { 
+//     return `${country} has ${population} people and its capital city is ${capitalCity}`
+// }
+
+// console.log(describeCountry('Pakistan', '229 million', 'Islamabad'));
+// console.log(describeCountry('India', '1 billion', 'Mumbai'));
+// console.log(describeCountry('China', '1 billion', 'Shaghai'));
+
+function percentageOfWorld1(population) { 
+      return (population / 7_753_000_000) * 100;
 }
 
-console.log(describeCountry('Pakistan', '229 million', 'Islamabad'));
-console.log(describeCountry('India', '1 billion', 'Mumbai'));
-console.log(describeCountry('China', '1 billion', 'Shaghai'));
+console.log(percentageOfWorld1(1_400_000_000));
+console.log(percentageOfWorld1(2_400_000_000));
+console.log(percentageOfWorld1(3_400_000_000));

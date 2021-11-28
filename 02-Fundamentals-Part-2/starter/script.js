@@ -618,12 +618,27 @@
 
 
 const percentageOfWorld3 = population => (population / 7_753_000_000) * 100 + "%";
-console.log(percentageOfWorld3(14_000_000_000));
+// console.log(percentageOfWorld3(14_000_000_000));
 
 
 
-function describePopulation (country, population) { 
-    return `${country} has ${population} which is about ${percentageOfWorld3(population)} of the world.`
-}
+// function describePopulation (country, population) { 
+//     return `${country} has ${population} which is about ${percentageOfWorld3(population)} of the world.`
+// }
 
-console.log(describePopulation("Pakistan", 229_000_000));
+// console.log(describePopulation("Pakistan", 229_000_000));
+
+// Arrays
+
+const populations = [229_000_000, 229_000, 123_456_345, 123_444_553];
+console.log( populations.length === 4 );
+
+
+const percentages = [percentageOfWorld3(populations[0]), percentageOfWorld3(populations[1])
+    , percentageOfWorld3(populations[2]), percentageOfWorld3(populations[3]) ];
+
+// for(let i = 0; i < populations.length; i++) { 
+// percentages.push = [percentageOfWorld3(populations[i])];
+// }
+
+console.log(percentages);

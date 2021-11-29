@@ -675,4 +675,5 @@ const myCountry = {
     neighbours
 }
 
-console.log(myCountry.neighbours);
+console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+

@@ -630,15 +630,40 @@ const percentageOfWorld3 = population => (population / 7_753_000_000) * 100 + "%
 
 // Arrays
 
-const populations = [229_000_000, 229_000, 123_456_345, 123_444_553];
-console.log( populations.length === 4 );
+// const populations = [229_000_000, 229_000, 123_456_345, 123_444_553];
+// console.log( populations.length === 4 );
 
-
-const percentages = [percentageOfWorld3(populations[0]), percentageOfWorld3(populations[1])
-    , percentageOfWorld3(populations[2]), percentageOfWorld3(populations[3]) ];
+// const percentages = [];
 
 // for(let i = 0; i < populations.length; i++) { 
-// percentages.push = [percentageOfWorld3(populations[i])];
+// percentages.push(percentageOfWorld3(populations[i]));
 // }
 
-console.log(percentages);
+// console.log(percentages);
+
+
+
+// Basic array operations
+// const neighbours = ['India', 'China'];
+
+// neighbours.push('Utopia');
+
+// console.log(neighbours);
+
+// neighbours.pop();
+
+// console.log(neighbours);
+
+
+// // if(!neighbours.includes['Germany']) { 
+// //     console.log(`Germany is not in the array`);
+// // }
+
+// neighbours[0] = "IndianTattay";
+
+// console.log(neighbours);
+
+// Ifthe'neighbours'arraydoesnotincludethecountry‘Germany’,
+//logtothe console: 'Probably not a central European country :D'
+
+

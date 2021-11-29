@@ -644,7 +644,7 @@ const percentageOfWorld3 = population => (population / 7_753_000_000) * 100 + "%
 
 
 // Basic array operations
-// const neighbours = ['India', 'China'];
+const neighbours = ['India', 'China'];
 
 // neighbours.push('Utopia');
 
@@ -667,3 +667,12 @@ const percentageOfWorld3 = population => (population / 7_753_000_000) * 100 + "%
 //logtothe console: 'Probably not a central European country :D'
 
 
+const myCountry = {
+    country: "Pakistan",
+    capital: "Islamabad",
+    language: "Urdu",
+    population: `229,000,000`,
+    neighbours
+}
+
+console.log(myCountry.neighbours);

@@ -672,8 +672,26 @@ const myCountry = {
     capital: "Islamabad",
     language: "Urdu",
     population: `229,000,000`,
-    neighbours
+    neighbours,
+
+    describe: this.capital,
 }
 
-console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+console.log
+(`${myCountry.country} has ${myCountry.population} 
+${myCountry.language}-speaking people, 
+${myCountry.neighbours.length} neighbouring countries and a capital called 
+${myCountry.capital}.`);
+
+myCountry ["population"] = "231,000,000";
+console.log(myCountry.population);
+
+myCountry.population = "227,000,000";
+console.log(myCountry.population);
+
+// const interestedIn = prompt(`What do you want to know about myCountry?
+// Country? Capital? Language? Population?`);
+// console.log(interestedIn);
+
+
 

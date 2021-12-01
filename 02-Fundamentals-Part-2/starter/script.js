@@ -674,24 +674,41 @@ const myCountry = {
     population: `229,000,000`,
     neighbours,
 
-    describe: this.capital,
+
+
+  describe()  {
+        console.log(`${this.country} has ${this.population} 
+        ${this.language}-speaking people, 
+        ${this.neighbours.length} neighbouring countries and a capital called 
+        ${this.capital}.`)
+    }
 }
 
-console.log
-(`${myCountry.country} has ${myCountry.population} 
-${myCountry.language}-speaking people, 
-${myCountry.neighbours.length} neighbouring countries and a capital called 
-${myCountry.capital}.`);
+// console.log
+// (`${myCountry.country} has ${myCountry.population} 
+// ${myCountry.language}-speaking people, 
+// ${myCountry.neighbours.length} neighbouring countries and a capital called 
+// ${myCountry.capital}.`);
 
-myCountry ["population"] = "231,000,000";
-console.log(myCountry.population);
+// myCountry ["population"] = "231,000,000";
+// console.log(myCountry.population);
 
-myCountry.population = "227,000,000";
-console.log(myCountry.population);
+// myCountry.population = "227,000,000";
+// console.log(myCountry.population);
+
+console.log(myCountry.describe());
 
 // const interestedIn = prompt(`What do you want to know about myCountry?
 // Country? Capital? Language? Population?`);
 // console.log(interestedIn);
+
+
+
+
+// Add a method called 'describe' to the 'myCountry' object. This method
+// Will log a string to the console, similar to the string logged in the previous
+// assignment, but this time using the 'this' keyword.
+
 
 
 

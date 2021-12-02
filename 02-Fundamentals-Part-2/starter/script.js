@@ -667,21 +667,36 @@ const neighbours = ['India', 'China'];
 //logtothe console: 'Probably not a central European country :D'
 
 
+
+
+// Addamethodcalled'checkIsland'tothe'myCountry'object.This
+// method will set a new property on the object, called 'isIsland'. 'isIsland' will be 
+// true if there are no neighbouring countries, and false if there are. 
+// Use the ternary operator to set the property.
+
 const myCountry = {
     country: "Pakistan",
     capital: "Islamabad",
     language: "Urdu",
     population: `229,000,000`,
-    neighbours,
+    neighbours: 0,
 
 
-
-  describe()  {
-        console.log(`${this.country} has ${this.population} 
+    describe: function()  {
+        return (`${this.country} has ${this.population} 
         ${this.language}-speaking people, 
         ${this.neighbours.length} neighbouring countries and a capital called 
         ${this.capital}.`)
-    }
+    },
+
+    checkIsland: function() { 
+        if(this.neighbours == 0){
+            this.isIsland = true;
+        } else this.isIsland = false;
+
+        return this.isIsland;
+    },
+    
 }
 
 // console.log
@@ -697,6 +712,10 @@ const myCountry = {
 // console.log(myCountry.population);
 
 console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
+// console.log(myCountry.checkIsland());
+
+// This is the country 
 
 // const interestedIn = prompt(`What do you want to know about myCountry?
 // Country? Capital? Language? Population?`);

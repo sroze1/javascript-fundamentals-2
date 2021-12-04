@@ -679,7 +679,8 @@ const myCountry = {
     capital: "Islamabad",
     language: "Urdu",
     population: `229,000,000`,
-    neighbours: 0,
+    neighbours: 2,
+    smallTown: 50,
 
 
     describe: function()  {
@@ -690,12 +691,9 @@ const myCountry = {
     },
 
     checkIsland: function() { 
-        if(this.neighbours == 0){
-            this.isIsland = true;
-        } else this.isIsland = false;
-
+        this.neighbours == 0 ? this.isIsland = true : this.isIsland = false;
         return this.isIsland;
-    },
+    }
     
 }
 
@@ -720,6 +718,12 @@ console.log(myCountry.checkIsland());
 // const interestedIn = prompt(`What do you want to know about myCountry?
 // Country? Capital? Language? Population?`);
 // console.log(interestedIn);
+
+for(let i = 1; i <= myCountry.smallTown; i++) { 
+    console.log(`Voter number ${i} is currently voting`);
+}
+
+
 
 
 

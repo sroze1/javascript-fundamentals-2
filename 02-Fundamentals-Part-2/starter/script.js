@@ -719,9 +719,9 @@ console.log(myCountry.checkIsland());
 // Country? Capital? Language? Population?`);
 // console.log(interestedIn);
 
-for(let i = 1; i <= myCountry.smallTown; i++) { 
-    console.log(`Voter number ${i} is currently voting`);
-}
+// for(let i = 1; i <= myCountry.smallTown; i++) { 
+//     console.log(`Voter number ${i} is currently voting`);
+// }
 
 
 
@@ -731,6 +731,19 @@ for(let i = 1; i <= myCountry.smallTown; i++) {
 // Add a method called 'describe' to the 'myCountry' object. This method
 // Will log a string to the console, similar to the string logged in the previous
 // assignment, but this time using the 'this' keyword.
+
+const populations = [229_000_000, 229_000, 123_456_345, 123_444_553];
+const populations2 = [];
+
+for (let i = 0; i < populations.length; i++){ 
+    populations2.push((populations[i] / 7_753_000_000) * 100);
+}
+// formula: population / 7_753_000_000) * 100;
+
+console.log(populations2);
+
+
+
 
 
 

@@ -759,4 +759,28 @@ for(let i = 0; i < listOfNeighbours.length; i++) {
 
 
 
+    const populations = [229_000_000, 229_000, 123_456_345, 123_444_553];
+    const percentages3 = [];
+
+    while (percentages3.length != populations.length) { 
+        let i = 0;
+        percentages3.push( (populations[i] / 7_753_000_000) * 100  + "%");
+        i++;
+    }
+
+    console.log(percentages3);
+
+
+    // function percentageOfWorld1(population) { 
+        //       return (population / 7_753_000_000) * 100;
+        // }
+        
+        // console.log(percentageOfWorld1(1_400_000_000));
+        // console.log(percentageOfWorld1(2_400_000_000));
+        // console.log(percentageOfWorld1(3_400_000_000));
+        
+        
+        // const percentageOfWorld3 = population => (population / 7_753_000_000) * 100 + "%";
+        // console.log(percentageOfWorld3(14_000_000_000));
+
 // console.log(listOfNeighbours[2].length);

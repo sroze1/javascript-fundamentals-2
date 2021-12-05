@@ -644,7 +644,7 @@ const percentageOfWorld3 = population => (population / 7_753_000_000) * 100 + "%
 
 
 // Basic array operations
-const neighbours = ['India', 'China'];
+// const neighbours = ['India', 'China'];
 
 // neighbours.push('Utopia');
 
@@ -674,28 +674,28 @@ const neighbours = ['India', 'China'];
 // true if there are no neighbouring countries, and false if there are. 
 // Use the ternary operator to set the property.
 
-const myCountry = {
-    country: "Pakistan",
-    capital: "Islamabad",
-    language: "Urdu",
-    population: `229,000,000`,
-    neighbours: 2,
-    smallTown: 50,
+// const myCountry = {
+//     country: "Pakistan",
+//     capital: "Islamabad",
+//     language: "Urdu",
+//     population: `229,000,000`,
+//     neighbours: 2,
+//     smallTown: 50,
 
 
-    describe: function()  {
-        return (`${this.country} has ${this.population} 
-        ${this.language}-speaking people, 
-        ${this.neighbours.length} neighbouring countries and a capital called 
-        ${this.capital}.`)
-    },
+//     describe: function()  {
+//         return (`${this.country} has ${this.population} 
+//         ${this.language}-speaking people, 
+//         ${this.neighbours.length} neighbouring countries and a capital called 
+//         ${this.capital}.`)
+//     },
 
-    checkIsland: function() { 
-        this.neighbours == 0 ? this.isIsland = true : this.isIsland = false;
-        return this.isIsland;
-    }
+//     checkIsland: function() { 
+//         this.neighbours == 0 ? this.isIsland = true : this.isIsland = false;
+//         return this.isIsland;
+//     }
     
-}
+// }
 
 // console.log
 // (`${myCountry.country} has ${myCountry.population} 
@@ -709,8 +709,8 @@ const myCountry = {
 // myCountry.population = "227,000,000";
 // console.log(myCountry.population);
 
-console.log(myCountry.describe());
-console.log(myCountry.checkIsland());
+// console.log(myCountry.describe());
+// console.log(myCountry.checkIsland());
 // console.log(myCountry.checkIsland());
 
 // This is the country 
@@ -732,19 +732,31 @@ console.log(myCountry.checkIsland());
 // Will log a string to the console, similar to the string logged in the previous
 // assignment, but this time using the 'this' keyword.
 
-const populations = [229_000_000, 229_000, 123_456_345, 123_444_553];
-const populations2 = [];
+// const populations = [229_000_000, 229_000, 123_456_345, 123_444_553];
+// const populations2 = [];
 
-for (let i = 0; i < populations.length; i++){ 
-    populations2.push((populations[i] / 7_753_000_000) * 100);
-}
-// formula: population / 7_753_000_000) * 100;
+// for (let i = 0; i < populations.length; i++){ 
+//     populations2.push((populations[i] / 7_753_000_000) * 100);
+// }
+// // formula: population / 7_753_000_000) * 100;
 
-console.log(populations2);
-
-
+// console.log(populations2);
 
 
 
+const listOfNeighbours = [['Canada', 'Mexico'],
+['Spain'],
+['Norway', 'Sweden', 'Russia']];
+
+// console.log(listOfNeighbours);
+// console.log( listOfNeighbours[0][1]  );
+
+for(let i = 0; i < listOfNeighbours.length; i++) { 
+        for (let j = 0; j < listOfNeighbours[i].length; j++) {
+            console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+        }
+    }
 
 
+
+// console.log(listOfNeighbours[2].length);
